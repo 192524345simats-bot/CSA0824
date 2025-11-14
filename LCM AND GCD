@@ -1,0 +1,19 @@
+n1=int(input("Enter the First number:"))
+n2=int(input("Enter Second number:"))
+x=n1
+y=n2
+while(n2!=0):
+    t=n2
+    n2=n1%n2
+    n1=t
+gcd=n1
+print("Gcd of{0}and {1}={2}".format(x,y,gcd))
+lcm=(x*y)/gcd
+print("lcmof {0} and {1}={2}".format(x,y,lcm))
+
+
+out put
+Enter the First number:50
+Enter Second number:60
+Gcd of50and 60=10
+lcmof 50 and 60=300.0
