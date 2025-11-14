@@ -1,0 +1,16 @@
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    if n>1:
+        return n* fact(n-1)
+
+
+num=int(input("Enter the number:"))
+sum=0
+for i in range(1,num+1):
+    sum+=fact(i)
+print(sum)
+
+OUT PUT
+Enter the number:37
+14146383753727377231082583937026584420940313
